@@ -1,0 +1,223 @@
+html {
+	box-sizing: border-box;
+}
+
+html *,
+html *::before,
+html *::after {
+	box-sizing: inherit;
+}
+
+body {
+	overflow-x: hidden;
+	font-family: 'Nunito', sans-serif;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	line-height: 1.6;
+	font-weight: 300;
+}
+
+button:hover,
+.btn:hover {
+	transform: translateY(1px);
+	-webkit-transform: translateY(1px);
+	-moz-transform: translateY(1px);
+	-ms-transform: translateY(1px);
+	-o-transform: translateY(1px);
+	box-shadow: 0 7px 14px rgba(50, 50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.8);
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+
+.website__title {
+	font-size: 1.1em;
+	margin-bottom: 0;
+	letter-spacing: 1px;
+}
+
+.navbar .nav-link {
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+.navbar .nav-item.active {
+	border-left: rgb(99, 99, 99) 3px solid;
+}
+
+@media all and (min-width: 62em) {
+	.navbar .nav-link {
+		padding-left: 0.8em !important;
+		padding-right: 1em !important;
+	}
+}
+
+.carousel-item {
+	height: 28.5em;
+}
+
+.carousel-img-1 {
+	background: url('../img/image1.jpg') center top/cover no-repeat;
+}
+
+.carousel-img-2 {
+	background: url('../img/image2.jpg') center top/cover no-repeat;
+}
+
+.carousel-img-3 {
+	background: url('../img/image3.jpg') center top/cover no-repeat;
+}
+
+#home-heading {
+	position: relative;
+	min-height: 13em;
+	background: url('../img/lights.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+
+.dark-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	/* min-height: 13em; */
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+#video-play {
+	position: relative;
+	min-height: 13em;
+	/* text-align: center; */
+	color: #fff;
+	background: url('../img/media.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* background-position: 0 -300px; */
+}
+
+#video-play .fas {
+	color: #fff !important;
+}
+
+#page-header {
+	height: 13em;
+	background: url('../img/lights.jpg');
+	background-position: 0 -300px;
+	background-attachment: fixed;
+	color: #fff;
+	border-bottom: 1px #eee solid;
+	padding-top: 0.5em;
+	position: relative;
+}
+#page-header .dark-overlay {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+#about .about__section-img {
+	margin-top: -2em;
+	box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 62em) {
+	#about .about__section-img {
+		margin-top: -4em;
+	}
+
+	#about .about__section-desc {
+		font-size: 1.2em;
+	}
+}
+
+#services .card-title-desc {
+	font-size: 0.5em;
+	margin-left: 0.2em;
+}
+
+#faq {
+	background: linear-gradient(
+		to right,
+		hsla(213, 63%, 18%, 1),
+		hsla(210, 10%, 23%, 1)
+	);
+}
+
+#faq a:hover,
+#faq a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+#accordion .panel {
+	border: none;
+	border-radius: 0.2em;
+	-webkit-border-radius: 0.2em;
+	-moz-border-radius: 0.2em;
+	-ms-border-radius: 0.2em;
+	-o-border-radius: 0.2em;
+	box-shadow: none;
+	margin-bottom: 0.8em;
+	background: transparent;
+}
+
+#accordion .panel-heading {
+	padding: 0;
+	border: none;
+	border-radius: 0.2em;
+	-webkit-border-radius: 0.2em;
+	-moz-border-radius: 0.2em;
+	-ms-border-radius: 0.2em;
+	-o-border-radius: 0.2em;
+	background: transparent;
+	position: relative;
+}
+
+#accordion .panel-title a {
+	display: block;
+	padding: 1em 1.2em;
+	margin: 0;
+	background: rgba(0, 0, 0, 0.4);
+	font-size: 1em;
+	font-weight: 400;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border: none;
+	border-radius: 0.2em;
+	-webkit-border-radius: 0.2em;
+	-moz-border-radius: 0.2em;
+	-ms-border-radius: 0.2em;
+	-o-border-radius: 0.2em;
+	position: relative;
+}
+
+#accordion .panel-title a.collapsed {
+	border: none;
+}
+
+#accordion .panel-body {
+	padding: 1em 1.2em;
+	background: rgba(0, 0, 0, 0.1);
+	font-size: 1.1em;
+	color: #fff;
+	letter-spacing: 1px;
+	border-top: none;
+	border-radius: 0.2em;
+	-webkit-border-radius: 0.2em;
+	-moz-border-radius: 0.2em;
+	-ms-border-radius: 0.2em;
+	-o-border-radius: 0.2em;
+}
+
+#footer {
+	background-color: #000;
+	color: #fff;
+}
